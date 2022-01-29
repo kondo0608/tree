@@ -5,17 +5,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="./modules/lodash.min.js"></script>
-  <script type="text/javascript" src="./modules/test-boilerplate.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Let's <span>Grow</span> a Cristmas Tree!</h1>
-  <img id="seed" src="seed.png"><span>：</span>
-  <h3 id="tree"></h3>
-  <img id="grow" src="edited_grow.png">
-  <script type="text/javascript" src="script.js"></script>
+  <!-- タイトル -->
+  <div id=header>
+    <h1 id="title">Let's <span>Grow</span> a Cristmas Tree!</h1>
+    <img id="cristmastree-img" src="images/cristmastree.png">
+  </div>
+  
+  <!-- インプット -->
+  <div id="input">
+    <!-- 種を入力 -->
+    <div id="input-seed">
+      <img id="seed-img" src="images/seed.png">
+      <span>：</span>
+      <input type="text" name="character" id="text-character" name="input-seed" size="1" maxlength="1">
+    </div>
+    
+    <!-- 高さを入力 -->
+    <div id="input-height">
+      <img id="height-img" src="images/height.png">
+      <span>：</span>
+      <input type="number" name="height" id="text-height" name="input-seed" min="1" max="99" oninput="sliceMaxLength(this,2)">
+    </div>
+  </div>
+  
+  <!-- アウトプット（クリスマスツリー） -->
+  <div id="grow-tree">
+    <img id="grow-img" src="images/grow.png">
+    <a href="presentation.pptx"><img id="star-img" src="images/star.png"></a>
+    <h3 id="tree"></h3>
+  </div>
+  
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/move.js"></script>
 </body>
 
 </html>
