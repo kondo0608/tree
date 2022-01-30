@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* タイトル */
+#header {
+    text-align: center;
+}
+
+#title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 3em;
+}
+
+#title span {
+    color: greenyellow;
+}
+
+#christmastree-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3em;
+}
+
+/* 入力 */
+#input {
+    /* padding-top: 0.5em; */
+    display:flex;
+    justify-content: center;
+}
+
+#input-seed {
+    float: left;
+    padding: 0 4em;
+    text-align: center;
+}
+
+#input-seed p {
+    margin-top: 0.5em;
+}
+
+#seed-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3em;
+}
+
+#text-character {
+    display: inline-block;
+}
+
+#input-height {
+    float: left;
+    padding: 0 4em;
+    text-align: center;
+}
+
+#input-height p {
+    margin-top: 0.5em;
+}
+
+#height-img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3em;
+}
+
+#text-height {
+    display: inline-block;
+}
+
+/* 出力 */
+#grow-tree {
+    text-align: center;
+}
+
+#grow-img {
+    display: block;
+    margin: 5em auto;
+    height: 3em;
+    padding: 1em;
+    border: medium solid greenyellow;
+    background-color: #262626;
+}
+
+#grow-img:hover {
+    opacity: 0.7;
+}
+
+#star-img {
+    display: none;
+    margin: 0 auto;
+    margin-top: 2em;
+    height: 2.5em;
+}
+
+#tree {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
