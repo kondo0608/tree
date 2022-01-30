@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>GrowAChristmasTree</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="css/style_christmastree.css">
+</head>
+
+<body>
+  <!-- タイトル -->
+  <div id=header>
+    <h1 id="title">Let's <span>Grow</span> a Christmas Tree!</h1>
+    <img id="christmastree-img" src="images/christmastree.png">
+  </div>
+  
+  <!-- インプット -->
+  <div id="input">
+    <!-- 種を入力 -->
+    <div id="input-seed">
+      <p>one character</p>
+      <img id="seed-img" src="images/seed.png">
+      <span>：</span>
+      <input type="text" name="character" id="text-character" name="input-seed" size="1" maxlength="1">
+    </div>
+    
+    <!-- 高さを入力 -->
+    <div id="input-height">
+      <p>tree height</p>
+      <img id="height-img" src="images/height.png">
+      <span>：</span>
+      <input type="number" name="height" id="text-height" name="input-seed" min="1" max="99" oninput="sliceMaxLength(this,2)">
+    </div>
+  </div>
+  
+  <!-- アウトプット（クリスマスツリー） -->
+  <div id="grow-tree">
+    <img id="grow-img" src="images/grow.png">
+    <a href="slide.html"><img id="star-img" src="images/star.png"></a>
+    <h3 id="tree"></h3>
+  </div>
+  
+  <script type="text/javascript" src="js/script_christmastree.js"></script>
+  <script type="text/javascript" src="js/script_slide.js"></script>
+</body>
+
+</html>
