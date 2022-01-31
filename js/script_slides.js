@@ -1,14 +1,15 @@
-$(function() {
+// targetの全要素にイベントリスナーを定義する
+let target = document.getElementsByClassName("index-btn");
+target = [].slice.call(target);   // コレクションを配列に変換
+
+for (let i = 0; i < target.length; i++) {
+  target[i].addEventListener("click", function() {
+    
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active"); // 現在のactiveクラスを取り除く
+    }
   
-  $('.index-btn').click(function() {
-
-    // 現在のactiveクラスを取り除く
-    $('.active').removeClass('active');
-
-    // クリックしたボタンにactiveクラスを付与する
-    let clickedIndex = $('.index-btn').index($(this));
-    $('.slide').eq(clickedIndex).addClass('active');
-
-  });
-  
-});
+    slides[target.indexOf(this)].classList.add("active"); // 対応する要素にactiveクラスを付与
+  }); 
+}
