@@ -6,8 +6,8 @@ for (let i = 0; i < target.length; i++) {
   target[i].addEventListener("click", function() {
     
     const slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active"); // 現在のactiveクラスを取り除く
+    for (let j = 0; j < slides.length; j++) {
+      slides[j].classList.remove("active"); // 現在のactiveクラスを取り除く
     }
   
     slides[target.indexOf(this)].classList.add("active"); // 対応する要素にactiveクラスを付与
