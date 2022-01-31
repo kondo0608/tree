@@ -50,8 +50,7 @@ button.addEventListener("click", () => {
     star.style.display = "inline"; // 星を表示する
     
     const tree = document.getElementById("tree")
-    tree.textContent = christmasTree(character, treeHeight); // クリスマスツリーを表示する
-    tree.innerHTML = tree.textContent.replace(/\n/g, "<br>"); // \nを<br>に変換する（htmlでは\nで改行できない）
+    tree.innerText = christmasTree(character, treeHeight); // クリスマスツリーを表示する
 
     document.body.style.backgroundImage = "url(images/snow.gif)"; // 雪を降らせる
 
