@@ -41,7 +41,7 @@ const button = document.getElementById("grow-img");
 button.addEventListener("click", () => {
   
   const character = document.getElementById("text-character").value; // 種
-  const treeHeight = document.getElementById("text-height").value; // 鷹さ
+  const treeHeight = document.getElementById("text-height").value; // 高さ
   if(character != "" && treeHeight != "") {
 
     button.style.display = "none"; // ボタンを消す
